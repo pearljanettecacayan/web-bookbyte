@@ -30,7 +30,7 @@ const theme = ref('dark')
         </v-container>
       </v-main>
 
-      <!-- <v-footer color="black" border app>2024 - BookByte</v-footer> -->
+      <!-- <v-footer color="black" border app>2024 - BookByte | All Rights Reserved</v-footer> -->
     </v-app>
   </v-responsive>
 </template>
