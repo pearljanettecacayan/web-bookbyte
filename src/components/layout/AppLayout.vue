@@ -9,7 +9,7 @@ const theme = ref('dark')
 </script>
 
 <template>
-  <v-responsive class="border rounded">
+  <v-responsive>
     <v-app :theme="theme">
       <v-app-bar class="px-3" color="grey-lighten-1">
         <v-spacer></v-spacer>
