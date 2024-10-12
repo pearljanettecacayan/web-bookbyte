@@ -18,6 +18,13 @@
       variant="outlined"
     ></v-text-field>
 
-    <v-btn class="mt-2" type="submit" block color="purple">Sign up</v-btn>
+    <v-btn
+      class="mt-2"
+      type="submit"
+      block
+      color="purple"
+      prepend-icon="mdi-account-plus"
+      >Sign up</v-btn
+    >
   </v-form>
 </template>
