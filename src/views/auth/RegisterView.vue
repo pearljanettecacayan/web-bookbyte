@@ -10,7 +10,7 @@ const { mobile } = useDisplay()
   <AppLayout>
     <template #content>
       <v-row>
-        <v-col cols="12" md="6" class="mx-auto">
+        <v-col cols="12" md="6" class="mx-auto pt-10">
           <v-card class="mx-auto" elevation="24">
             <v-card-title class="text-center">
               <v-img
@@ -27,7 +27,7 @@ const { mobile } = useDisplay()
 
               <h5 class="text-center pt-5">
                 Already have an account?
-                <RouterLink class="text-purple-lighten-2" to="/"
+                <RouterLink class="text-purple-lighten-1 bold-text" to="/"
                   >Log in here</RouterLink
                 >
               </h5>
