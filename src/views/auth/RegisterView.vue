@@ -7,6 +7,7 @@ function onClick() {
   theme.value = theme.value === 'light' ? 'dark' : 'light'
 }
 </script>
+
 <template>
   <v-responsive class="border rounded">
     <v-app :theme="theme">
@@ -26,11 +27,11 @@ function onClick() {
       <v-main>
         <v-container>
           <v-row>
-            <v-col cols="12" md="6" class="mx-auto pt-10">
+            <v-col cols="12" md="6" class="mx-auto">
               <v-card
                 class="mx-auto"
-                prepend-icon="mdi-login"
-                subtitle="Login"
+                prepend-icon="mdi-account-plus"
+                subtitle="Sign up"
                 elevation="24"
               >
                 <template v-slot:title>
@@ -40,7 +41,17 @@ function onClick() {
                 <v-card-text class="bg-surface-light pt-4">
                   <v-form fast-fail @submit.prevent>
                     <v-text-field
-                      label="Username"
+                      label="Firstname"
+                      variant="outlined"
+                    ></v-text-field>
+
+                    <v-text-field
+                      label="Lastname"
+                      variant="outlined"
+                    ></v-text-field>
+
+                    <v-text-field
+                      label="Email"
                       variant="outlined"
                     ></v-text-field>
 
@@ -50,17 +61,23 @@ function onClick() {
                       variant="outlined"
                     ></v-text-field>
 
+                    <v-text-field
+                      label="Password Confirmation"
+                      type="password"
+                      variant="outlined"
+                    ></v-text-field>
+
                     <v-btn color="purple" class="mt-2" type="submit" block
                       >Submit</v-btn
                     >
                   </v-form>
 
-                  <v-divider class="my-5"> </v-divider>
+                  <v-divider class="my-5"></v-divider>
 
                   <h5 class="text-center">
-                    Don't have an account yet?
-                    <RouterLink class="text-purple-lighten-2" to="/register"
-                      >Sign up here</RouterLink
+                    Already have an account?
+                    <RouterLink class="text-purple-lighten-2" to="/"
+                      >Log in here</RouterLink
                     >
                   </h5>
                 </v-card-text>
